@@ -53,21 +53,24 @@ export function sortArray(array) {
 // index - 1
 // result "start wars"
 export function buildStringUsingIndex(array, index) {
-  let newString = array.map((indexItem) => {
-    return indexItem[index];
-  });
-  newString.join("");
-  return newString;
-  //   let newString= "";
-  // for (let i = 0; i < array.length; i++) {
-  // if (array[i].length > index) {
-  // newString+= array[i].charAt(index);
-  // } else {
-  // newString += " ";
-  // }
-  // }
-  // return newString
+
+    let newString= "";
+  for (let i = 0; i < array.length; i++) {
+  if (array[i].length > index) {
+  newString+= array[i].charAt(index);
+  } else {
+  newString += " ";
+  }
+  }
+  return newString
 }
+//-------------------------------------------------
+//   let newString = array.map((indexItem) => {
+//     return indexItem[index];
+//   });
+//   newString.join("");
+//   return newString;
+//-------------------------------------------------
 
 // Tasks 6 - check, if string is palindrome
 // and return "The string is palindrome"
